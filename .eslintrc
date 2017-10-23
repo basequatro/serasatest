@@ -1,0 +1,35 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import",
+        "react-native"
+    ],
+    "rules": {
+        "no-console": 1,
+        "max-len": [1, 250, 4],
+        "no-underscore-dangle": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "no-use-before-define": 0,              // disallow use of variables before they are defined
+        "class-methods-use-this": 0,            // sucks warning
+        "global-require": 0,                    // images require error
+        "react-native/no-unused-styles": 2,     // show unused styles
+        "react-native/no-inline-styles": 0,     // disable inline
+        'react-native/no-color-literals': 1,    // color dont repeat all time
+        'no-unused-vars': 1,                    // warning no unused vars
+        'react/prop-types': 0,                  // warning no undefined proptypes
+        "import/no-extraneous-dependencies": 0, // no time to fix yet TODO:
+        "import/extensions": 0,                 // no time to fix yet TODO:
+        "import/no-unresolved": 0,              // no time to fix yet TODO:
+        "react/no-array-index-key": 0,              // no time to fix yet TODO:
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".android.js", ".ios.js"]
+            }
+        }
+    }
+}
